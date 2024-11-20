@@ -1,4 +1,5 @@
 # Python Programming Study
+![Python Logo](https://github.com/Lazycodes/Python_programming_Study/blob/main/python_image.png)
 ## Project Overview
 This repository documents my journey and progress in learning Python programming. It includes simple exercises that build foundational and advanced Python skills. The repository covers the following core topics:   
 - **Python Basics**  
