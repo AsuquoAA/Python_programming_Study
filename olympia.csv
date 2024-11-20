@@ -3,26 +3,3 @@
 "Minna Maarit Aalto", "30", "Sailing"
 "Win Valdemar Aaltonen", "54", "Art Competitions"
 "Wakako Abe", "18", "Cycling"
-
-
-#Extracting from nested variables
-import json
-# print(type(res))
-# print(res.keys())
-res2 = res['statuses']
-#print("----Level 2: a list of tweets-----")
-#print(type(res2)) # it's a list!
-#print(len(res2))  # looks like one item representing each of the three tweets
-for res3 in res2:
-   #print("----Level 3: a tweet----")
-   #print(json.dumps(res3, indent=2)[:30])
-   res4 = res3['user']
-   #print("----Level 4: the user who wrote the tweet----")
-   #print(type(res4)) # it's a dictionary
-   #print(res4.keys())
-   print(res4['screen_name'], res4['created_at'])
-
-#using compacted method from json online editor
-for res2 in res["statuses"]:
-    print(res2["user"]["screen_name"],res2["user"]["created_at"])
-   
